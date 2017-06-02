@@ -1,0 +1,156 @@
+/*父元素*/
+.dropdown{
+	position: absolute;
+}
+/*标签*/
+.dd-icon{
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	border: 1px solid #E3E4E5;
+}
+/*标签展开*/
+.dropdown-layer{
+	border: 1px solid #E3E4E5;
+	color: #666666;
+	position: absolute;
+	background-color: #fff;
+	display: none;
+}
+/*鼠标悬浮时更改样式*/
+.dd-icon:hover~.dropdown-layer,.dropdown-layer:hover{
+	display: block;
+}
+.dropdown-layer:hover~.dd-icon,.dd-icon:hover{
+	background-color: #FFFFFF;
+	padding-bottom: 2px;
+	border-bottom: none;
+}
+
+/*----------------shortcut-----------------*/
+#shortcut.dropdown{
+	top: 0px;
+	left: 0px;
+	background-color: #E3E4E5;
+}
+#shortcut .dd-icon{
+	height: 28px;
+	line-height: 28px;
+	padding: 0 7px;
+}
+.myjd .dropdown-layer{
+	top: 30px;
+	left: 0;
+}
+.client-service .dropdown-layer{
+	top: 30px;
+	right: 0;
+}
+.website-nav .dropdown-layer{
+	width: 1190px;
+	top: 30px;
+	right: -85px;
+}
+.myjdlist{
+	width: 280px;
+	padding: 6px 14px;
+	float: left;
+}
+.cslist{
+	width: 170px;
+	padding: 6px 0;
+	text-indent: 14px;
+	float: left;
+}
+.myjdlist_2,.cslist_2{
+	border-top: 1px solid #F6F6F6;
+}
+.myjd [class*="fore"]{
+	width: 140px;
+	float: left;
+}
+.client-service .item,.website-nav .item{
+	width: 85px;
+	float: left;
+}
+#shortcut .item-hd,#shortcut dt{
+	font-weight: bold;
+}
+.website-nav [class*="fore"]{
+	margin: 6px 0;
+	padding-left: 14px;
+	float: left;
+	width: 261px;
+	border-left: 1px solid #F6F6F6;
+}
+.website-nav .fore1{
+	width: 346px;
+	border: none;
+}
+/*----------------shortcut-----------------*/
+/*购物车*/
+#header .dropdown{
+	width: 188px;
+	height: 35px;
+	position: absolute;
+	top: 25px;
+	right: 99px;
+	background-color: #FFFFFF;
+}
+/*购物车展开*/
+#header .dropdown-layer{
+	width: 308px;
+	top: 35px;
+	left: -122px;
+}
+#header .dropdown-layer a:hover{
+	color: #C0272C;
+}
+/*购物车标签*/
+#header .dd-icon{
+	color: #F10215;
+	height: 33px;
+	line-height: 33px;
+	padding: 0;
+}
+#header .dd-icon i{
+	font-size: 18px;
+}
+#header .dd-icon a{
+	color: #F10215;
+}
+#header .dd-icon a:hover{
+	color: #F10215;
+}
+#header .dd-icon a:visited,#header .dd-icon a:link{
+	color: #F10215;
+}
+#shopping-count{
+	width: 14px;
+	height: 14px;
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    right: auto;
+    display: inline-block;
+    padding: 1px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #f10215;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    min-width: 12px;
+    text-align: center;
+}
+/*购物车展开时更改样式*/
+/*.dd-icon:hover~.dropdown-layer{
+	display: block;
+}
+.dd-icon:hover{
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	display: block;
+	height: 35px;
+	border-bottom: none;
+}*/

@@ -1,0 +1,89 @@
+/* =General
+-----------------------------------------------------------------------------*/
+
+
+/* Remove padding and margin */
+* {
+  margin: 0;
+	padding: 0;
+}
+
+/* Put it back on certain elements */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, button, textarea, p, blockquote, th, td, form, fieldset, img{
+    margin: 0;
+    padding: 0;
+}
+
+/* Class for clearing floats */
+.clear {
+	clear: both;
+}
+
+/* Remove default Style */
+img{
+	border: none;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #C0272C;
+}
+a:visited,a:link{
+	color: #666;
+}
+button{
+	border: none;
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+input,select,textarea{
+	outline: none;
+}
+input{
+	border: none;
+	outline: none;
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    text-indent: 4px;
+    color: #999999;
+}
+select{
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-left: 6px;
+	font-size: 12px;
+	font-family: "SimHei";
+}
+textarea{
+	resize: none;
+}
+
+/* =Forms
+-----------------------------------------------------------------------------*/
+
+/* Removes fieldset borders. even on Opea 7 */
+fieldset {
+  border: 1px solid transparent;
+}
+
+
+/* =Tables
+-----------------------------------------------------------------------------*/
+
+table { 
+    border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+	font-weight: normal;
+}
+
