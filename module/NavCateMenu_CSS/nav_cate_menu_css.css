@@ -1,0 +1,141 @@
+/* =Typography
+-----------------------------------------------------------------------------*/
+
+body {
+	font: 12px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+	color: #666;
+	/*behavior:url(css/csshover.htc);*//*兼容ie6的hover效果*/
+}
+
+.inner{
+	width: 1190px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+#header,#footer{
+	height: 200px;
+	background-color: #eee;
+}
+
+
+/*----------------------Nav Cate Menu CSS-------------------*/
+/*一级菜单*/
+.fs .inner{
+	height: 480px;
+}
+.nav_cate_menu{
+	width: 190px;
+	height: 480px;
+	color: #fff;
+	padding-right: 10px;
+	float: left;
+}
+.nav_cate_menu a:hover{
+	color: #c81623;
+}
+.nav_cate_menu a:visited,.nav_cate_menu a:link{
+	color: #fff;
+}
+.cate{
+	width: 100%;
+	height: 100%;
+	background-color: #6E6568;
+	font-size: 14px;
+	line-height: 28px;
+	text-indent: 12px;
+	position: relative;
+}
+
+.cate_menu{
+	padding: 16px 0;
+}
+/*悬浮效果*/
+.cate_menu li:hover{
+	background-color: #999395;
+}
+.cate_menu li:hover .cate_pop{
+	display: block;
+}
+
+/*二级菜单*/
+.cate_pop{
+	/*display: none;*/
+	/*color: #666;*/
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 998px;
+    min-height: 478px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+    text-indent: 0;
+/*    -webkit-transition: top .25s ease;
+    transition: top .25s ease;*/
+}
+.cate_pop a:visited,.cate_pop a:link{
+	color: #666;
+}
+.cate_part_col1{
+	width: 778px;
+	float: left;
+	margin: 20px 0 20px 20px;
+		background-color: pink;
+}
+.cate_part_col2{
+	width: 168px;
+	float: left;
+	margin: 20px 16px;
+	line-height: 0;
+}
+.cate_brand{
+	width: 168px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.cate_brand_lk{
+	margin: 0 0 1px 1px;
+}
+.cate_promotion{
+	margin-top: 10px;
+}
+.cate_promotion_lk img{
+	margin-bottom: 1px;
+}
+.cate_channel_lk{
+	display: inline-block;
+	background-color: #6E6568;
+}
