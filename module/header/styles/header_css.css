@@ -1,0 +1,372 @@
+
+/* =Typography
+-----------------------------------------------------------------------------*/
+
+body {
+	font: 12px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+	color: #666;
+}
+
+.inner{
+	width: 1190px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+a:hover{
+	color: #c81623!important;
+}
+
+
+#shortcut{
+	height: 30px;
+	background-color: #E3E4E5;
+	border-bottom: 1px solid #DDDDDD;
+	color: #999;
+	position: relative;
+	z-index: 2;
+}
+#main{
+	height: 480px;
+	background-color: #E3E4E5;
+	position: relative;
+}
+
+/*#header .inner{
+	background-color: pink;
+}*/
+
+/*-----------------------header----------------------*/
+#header{
+	width: 100%;
+	height: 140px;
+	overflow: visible;
+	position: relative;
+	background-color: #F6F6F6;
+	position: relative;
+	z-index: 1;
+}
+/*#header a:visited,#header a:link{
+	color: #999;
+}
+#header a:hover{
+	color: #c81623;
+}*/
+/*促销活动图promotion2*/
+#treasure {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 190px;
+    height: 40px;
+}
+/*搜索框*/
+.form{
+	position: absolute;
+	top: 25px;
+	left: 320px;
+}
+.form>input{
+	width: 498px;
+	height: 33px;
+	border: 1px solid #F10215;
+}
+.search-img-upload{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.upload-bg{
+	width: 19px;
+	height: 15px;
+	display: block;
+	background: url(../images/sprite-photo-search.png) no-repeat;
+	position: absolute;
+	top: 9px;
+	left: 466px;
+	cursor: pointer;
+}
+.upload-bg:hover{
+	background: url(../images/sprite-photo-search.png) no-repeat -30px 0;
+}
+.upload-trigger{
+	width: 500px;
+	height: 500px;
+	opacity: 0;
+	display: none;
+}
+.submit-search{
+	width: 50px;
+	height: 35px;
+	background-color: #F10215;
+	color: #FFFFFF;
+}
+
+/*---------header dropdown----------*/
+
+/*父元素*/
+.dropdown{
+	position: absolute;
+}
+/*标签*/
+.dd-icon{
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	border: 1px solid #E3E4E5;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 7px;
+}
+/*标签展开*/
+.dropdown-layer{
+	border: 1px solid #E3E4E5;
+	color: #666666;
+	position: absolute;
+	background-color: #fff;
+	display: none;
+	/*z-index: 2;*/
+}
+/*鼠标悬浮时更改样式*/
+.dropdown:hover .dropdown-layer{
+	display: block;
+}
+.dropdown:hover .dd-icon{
+	background-color: #FFFFFF;
+	padding-bottom: 2px;
+	border-bottom: none;
+}
+
+/*购物车*/
+#header .dropdown{
+	width: 188px;
+	height: 35px;
+	position: absolute;
+	top: 25px;
+	right: 99px;
+	background-color: #FFFFFF;
+	z-index: 0;
+}
+/*购物车展开*/
+#header .dropdown-layer{
+	width: 308px;
+	top: 35px;
+	left: -122px;
+}
+#header .dropdown-layer a:hover{
+	color: #C0272C;
+}
+/*购物车标签*/
+#header .dd-icon{
+	color: #F10215;
+	height: 33px;
+	line-height: 33px;
+}
+#header .dd-icon i{
+	font-size: 18px;
+}
+#header .dd-icon a{
+	color: #F10215;
+}
+#header .dd-icon a:hover{
+	color: #F10215;
+}
+#header .dd-icon a:visited,#header .dd-icon a:link{
+	color: #F10215;
+}
+#shopping-count{
+	width: 14px;
+	height: 14px;
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    display: inline-block;
+    font-size: 12px!important;
+    font-style: normal;
+    line-height: 12px;
+    color: #fff;
+    background-color: #f10215;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    min-width: 12px;
+    text-align: center;
+}
+
+/*购物车基本样式*/
+.cart_hd,.cart_bd,.cart_ft{
+	width: 100%;
+	float: left;
+		/*background-color: gray;*/
+}
+.cart_bd{
+		/*background-color: pink;*/
+}
+/*cart_hd*/
+.cart_hd{
+	height: 40px;
+	text-indent: 8px;
+	line-height: 40px;
+}
+/*cart_bd*/
+.cart_bd>ul{
+	display: block;
+	width: 100%;
+}
+.cart_item_hd{
+	float: left;
+	width: 100%;
+	height: 34px;
+	border: 1px dotted #E3E4E5;
+	background-color: #BFFAB1;
+	line-height: 34px;
+}
+.cart_num,.cart_price{
+	font-weight: bold;
+}
+.cart_item_hd_info{
+	float: left;
+}
+.cart_item_hd_info>span{
+	background-color: #F8670F;
+	margin-left: 8px;
+	color: #fff;
+}
+.cart_item_hd_price{
+	float: right;
+	margin-right: 8px;
+}
+.cart_item{
+	display: block;
+	width: 100%;
+	line-height: 16px;
+		/*background-color: red;*/
+}
+.cart_img,.cart_name,.cart_info{
+	margin: 7px 0 7px 8px;
+}
+.cart_img{
+	float: left;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #E3E4E5;
+}
+.cart_name{
+	float: left;
+	width: 120px;
+		/*background-color: red;*/
+}
+.cart_info{
+	float: right;
+	width: 85px;
+	text-align: right;
+		/*background-color: blue;*/
+	margin-right: 7px;
+}
+/*cart_ft*/
+.cart_ft{
+	line-height: 45px;
+	height: 45px;
+	background-color: #F6F6F6;
+}
+.cart_ft_info{
+	float: left;
+	margin-left: 8px;
+}
+.cart_ft_lk{
+	float: right;
+	margin: 7px 8px;
+	font-weight: bold;
+	display: block;
+	width: 70px;
+	height: 30px;
+	background-color: #E43A3C;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 4px;
+}
+.cart_ft a{
+	color: #FFFFFF;
+}
+.cart_ft a:hover{
+	color: #FFFFFF;
+}
+.cart_ft a:visited,.dd-icon a:link{
+	color: #FFFFFF;
+}
+
+/*-------hotwords-----------*/
+#hotwords {
+    overflow: hidden;
+    position: absolute;
+    left: 320px;
+    top: 65px;
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+}
+#header .style-red {
+    color: #f10215;
+}
+#hotwords a {
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #999;
+}
+/*---------topnav----------*/
+#navitems {
+    overflow: hidden;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 790px;
+    height: 40px;
+}
+#navitems .spacer, #navitems li, #navitems ul {
+    float: left;
+}
+#navitems .spacer {
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -10px;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+#navitems li {
+    margin-left: 30px;
+}
+#navitems a {
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+}
