@@ -98,7 +98,49 @@ body {
 	padding-right: 15px;
 }
 /*----------二级菜单----------*/
-.myjd .dropdown-layer{
+.location .dropdown-layer{
+	width: 320px;
+}
+.arealist{
+	padding: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.location .item{
+	display: inline-block;
+	width: 54px;
+}
+.location .item a{
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	text-align: left;
+	padding: 0 8px;
+}
+.location .item a:hover{
+	background-color: #eee;
+}
+.location .selected{
+	background-color: #F10215;
+}
+.location .selected:link,
+.location .selected:visited,
+.location .selected:hover{
+	background-color: #F10215!important;
+	color: #fff!important;
+}
+
+.location .dropdown-layer,.myjd .dropdown-layer{
 	top: 30px;
 	left: 0;
 }
@@ -206,7 +248,7 @@ body {
 	float: left;
 	overflow: hidden;
 	margin-right: 2px;
-	background: url(images/sprite_mobile@1x.png) no-repeat;
+	background: url(../images/sprite_mobile@1x.png) no-repeat;
 }
 .mobile_pop_device_ios{
 	background-position: 0 0;
@@ -218,14 +260,11 @@ body {
 	background-position: 0 -52px;
 }
 /*父元素*/
-.dropdown{
-	position: absolute;
-	top: 0px;
-	left: 0px;
+#shortcut .dropdown{
 	background-color: #E3E4E5;
 }
 /*标签*/
-.dd-icon{
+#shortcut .dd-icon{
 	position: relative;
 	z-index: 1;
 	text-align: center;
@@ -235,7 +274,7 @@ body {
 	border: 1px solid #E3E4E5;
 }
 /*标签展开*/
-.dropdown-layer{
+#shortcut .dropdown-layer{
 	border: 1px solid #CFCFCF;
 	color: #666666;
 	position: absolute;
@@ -243,10 +282,10 @@ body {
 	display: none;
 }
 /*鼠标悬浮时更改样式*/
-.dropdown:hover .dropdown-layer{
+#shortcut .dropdown:hover .dropdown-layer{
 	display: block;
 }
-.dropdown:hover .dd-icon{
+#shortcut .dropdown:hover .dd-icon{
 	border: 1px solid #CFCFCF;
 	background-color: #FFFFFF;
 	padding-bottom: 2px;
