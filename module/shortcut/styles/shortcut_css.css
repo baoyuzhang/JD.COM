@@ -36,7 +36,15 @@ body {
 .fr{
 	float: right;
 }
-
+#header{
+	width: 100%;
+	height: 140px;
+	overflow: visible;
+	position: relative;
+	background-color: #F6F6F6;
+	position: relative;
+	z-index: 1;
+}
 /*-----------------------shortcut----------------------*/
 /*--------一级菜单--------*/
 #shortcut{
@@ -45,6 +53,7 @@ body {
 	border-bottom: 1px solid #DDDDDD;
 	color: #999;
 	position: relative;
+	z-index: 2;
 }
 #shortcut a:visited,#shortcut a:link{
 	color: #999;
@@ -52,7 +61,7 @@ body {
 #shortcut a:hover{
 	color: #c81623;
 }
-#shortcut .sp{
+#shortcut .style-red{
 	color: #F10215!important;
 }
 /*logo*/
@@ -214,6 +223,7 @@ body {
 	right: 0;
 	line-height: 1;
 	border: 1px solid #CFCFCF;
+	background-color: #fff;
 }
 .mobile_pop_item{
 	height: 102px;
