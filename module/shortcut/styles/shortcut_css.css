@@ -45,6 +45,8 @@ body {
 	position: relative;
 	z-index: 1;
 }
+
+
 /*-----------------------shortcut----------------------*/
 /*--------一级菜单--------*/
 #shortcut{
@@ -72,7 +74,6 @@ body {
 	position: absolute;
 	top: 0;
 	left:0;
-	/*z-index: 1;*/
 }
 .location{
 	line-height: 30px;
@@ -161,6 +162,7 @@ body {
 	width: 1190px;
 	top: 30px;
 	right: -75px;
+	z-index: 2;
 }
 .myjdlist{
 	width: 280px;
@@ -206,7 +208,6 @@ body {
 	z-index: 1;
 }
 .mobile_static_qrcode{
-	/*display: none;*/
 	position: absolute;
 	top: 30px;
 	right: -5px;
@@ -268,44 +269,4 @@ body {
 }
 .mobile_pop_device_pad{
 	background-position: 0 -52px;
-}
-/*父元素*/
-#shortcut .dropdown{
-	background-color: #E3E4E5;
-}
-/*标签*/
-#shortcut .dd-icon{
-	position: relative;
-	z-index: 1;
-	text-align: center;
-	height: 28px;
-	line-height: 28px;
-	padding: 0 7px;
-	border: 1px solid #E3E4E5;
-}
-/*标签展开*/
-#shortcut .dropdown-layer{
-	border: 1px solid #CFCFCF;
-	color: #666666;
-	position: absolute;
-	background-color: #fff;
-	display: none;
-}
-/*鼠标悬浮时更改样式*/
-#shortcut .dropdown:hover .dropdown-layer{
-	display: block;
-}
-#shortcut .dropdown:hover .dd-icon{
-	border: 1px solid #CFCFCF;
-	background-color: #FFFFFF;
-	padding-bottom: 2px;
-	border-bottom: none;
-}
-
-.mobile-jd:hover .mobile_static_qrcode,
-.website-nav:hover~.mobile-jd .mobile_static_qrcode{
-	display: none;
-}
-.mobile-jd:hover .mobile_pop{
-	display: block;
 }

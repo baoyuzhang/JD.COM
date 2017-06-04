@@ -56,9 +56,7 @@ a:hover{
 	position: relative;
 }
 
-/*#header .inner{
-	background-color: pink;
-}*/
+
 
 /*-----------------------header----------------------*/
 #header{
@@ -70,12 +68,7 @@ a:hover{
 	position: relative;
 	z-index: 1;
 }
-/*#header a:visited,#header a:link{
-	color: #999;
-}
-#header a:hover{
-	color: #c81623;
-}*/
+
 /*促销活动图promotion2*/
 #treasure {
     position: absolute;
@@ -128,39 +121,6 @@ a:hover{
 
 /*---------header dropdown----------*/
 
-/*父元素*/
-.dropdown{
-	position: absolute;
-}
-/*标签*/
-.dd-icon{
-	position: relative;
-	z-index: 1;
-	text-align: center;
-	border: 1px solid #E3E4E5;
-	height: 28px;
-	line-height: 28px;
-	padding: 0 7px;
-}
-/*标签展开*/
-.dropdown-layer{
-	border: 1px solid #E3E4E5;
-	color: #666666;
-	position: absolute;
-	background-color: #fff;
-	display: none;
-	/*z-index: 2;*/
-}
-/*鼠标悬浮时更改样式*/
-.dropdown:hover .dropdown-layer{
-	display: block;
-}
-.dropdown:hover .dd-icon{
-	background-color: #FFFFFF;
-	padding-bottom: 2px;
-	border-bottom: none;
-}
-
 /*购物车*/
 #header .dropdown{
 	width: 188px;
@@ -169,7 +129,7 @@ a:hover{
 	top: 25px;
 	right: 99px;
 	background-color: #FFFFFF;
-	z-index: 0;
+	z-index: 1;
 }
 /*购物车展开*/
 #header .dropdown-layer{
@@ -240,7 +200,8 @@ a:hover{
 	float: left;
 	width: 100%;
 	height: 34px;
-	border: 1px dotted #E3E4E5;
+	border-top: 1px dotted #E3E4E5;
+	border-bottom: 1px dotted #E3E4E5;
 	background-color: #BFFAB1;
 	line-height: 34px;
 }
