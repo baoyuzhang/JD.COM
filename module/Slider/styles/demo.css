@@ -1,0 +1,15 @@
+.slider_main {
+    width: 790px;
+    height: 340px;
+    /*overflow: hidden;*/
+    position: relative;
+}    
+.slider_list {
+    width: 7900px;
+    height: 340px;
+    position: absolute;
+    z-index: 1;
+}    
+.slider_item_lk {
+    float: left;
+}    

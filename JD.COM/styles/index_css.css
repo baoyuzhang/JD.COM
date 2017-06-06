@@ -1,56 +1,6 @@
-
-/* =Typography
------------------------------------------------------------------------------*/
-
-body {
-	font: 12px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
-	color: #666;
-}
-
-.inner{
-	width: 1190px;
-	height: 100%;
-	margin: 0 auto;
-	position: relative;
-}
-
-@font-face {
-  font-family: 'iconfont';
-  src: url('iconfont.eot');
-  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
-  url('iconfont.woff') format('woff'),
-  url('iconfont.ttf') format('truetype'),
-  url('iconfont.svg#iconfont') format('svg');
-}
-.iconfont{
-  font-family:"iconfont" !important;
-  font-size:16px;font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.fl{
-	float: left;
-}
-.fr{
-	float: right;
-}
-
-
-a:hover{
-	color: #c81623!important;
-}
-
-
 /* =Headings
 -----------------------------------------------------------------------------*/
 /*--------------------促销活动prehead---------------------*/
-#prehead{
-	height: 80px;
-	background-color: #A9291C;
-	position: relative;
-}
 #prehead .inner{
 	background: url(../images/promotion1.jpg) no-repeat 0 0;
 }
@@ -62,15 +12,6 @@ a:hover{
 
 /*-----------------------shortcut----------------------*/
 /*--------一级菜单--------*/
-#shortcut{
-	height: 30px;
-	background-color: #E3E4E5;
-	border-bottom: 1px solid #DDDDDD;
-	color: #999;
-	position: relative;
-	z-index: 2;
-}
-
 #shortcut .style-red{
 	color: #F10215;
 }
@@ -288,15 +229,7 @@ a:hover{
 
 
 /*-----------------------header----------------------*/
-#header{
-	width: 100%;
-	height: 140px;
-	overflow: visible;
-	position: relative;
-	background-color: #F6F6F6;
-	position: relative;
-	z-index: 1;
-}
+
 /*促销活动图promotion2*/
 #treasure {
     position: absolute;
@@ -499,7 +432,7 @@ a:hover{
 .cart_ft a:hover{
 	color: #FFFFFF;
 }
-.cart_ft a:visited,.dd-icon a:link{
+.cart_ft a:visited,.cart_ft .dd-icon a:link{
 	color: #FFFFFF;
 }
 

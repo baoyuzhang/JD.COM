@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1496463415599'); /* IE9*/
-  src: url('iconfont.eot?t=1496463415599#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1496463415599') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1496463415599') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1496463415599#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1496732983812'); /* IE9*/
+  src: url('iconfont.eot?t=1496732983812#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1496732983812') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1496732983812') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1496732983812#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -14,6 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-zuo:before { content: "\e66e"; }
 
 .icon-shang:before { content: "\e751"; }
 
@@ -25,13 +27,29 @@
 
 .icon-fangdajing:before { content: "\e63a"; }
 
-.icon-shang22:before { content: "\e609"; }
+.icon-zuo1:before { content: "\e657"; }
+
+.icon-zuo-copy:before { content: "\e65b"; }
+
+.icon-you:before { content: "\e602"; }
+
+.icon-zuo-copy1:before { content: "\e64f"; }
+
+.icon-xiao71-copy-copy:before { content: "\e629"; }
+
+.icon-zuo2:before { content: "\e670"; }
+
+.icon-zuo-copy2:before { content: "\e620"; }
 
 .icon-xia:before { content: "\e600"; }
 
+.icon-zuoyou:before { content: "\e62a"; }
+
+.icon-zuoyou1:before { content: "\e62b"; }
+
 .icon-icon:before { content: "\e601"; }
 
-.icon-sRight:before { content: "\e627"; }
+.icon-zuoyouqiehuan-:before { content: "\e676"; }
 
-.icon-jubaohuitubiao-:before { content: "\e689"; }
+.icon-sRight:before { content: "\e627"; }
 

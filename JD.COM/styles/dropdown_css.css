@@ -1,26 +1,3 @@
-/*父元素*/
-.dropdown{
-	position: absolute;
-}
-/*标签*/
-.dd-icon{
-	position: relative;
-	z-index: 3;
-	text-align: center;
-	border: 1px solid #E3E4E5;
-	height: 28px;
-	line-height: 28px;
-	padding: 0 7px;
-}
-
-/*标签展开*/
-.dropdown-layer{
-	color: #666666;
-	position: absolute;
-	background-color: #fff;
-	display: none;
-}
-
 /*鼠标悬浮时更改样式*/
 .dropdown:hover .dropdown-layer{
 	border: 1px solid #CFCFCF;

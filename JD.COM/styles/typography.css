@@ -1,0 +1,97 @@
+
+/* =Typography
+-----------------------------------------------------------------------------*/
+
+body {
+	font: 12px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+	color: #666;
+}
+
+.inner{
+	width: 1190px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+
+a:hover{
+	color: #c81623!important;
+}
+
+#prehead{
+	height: 80px;
+	background-color: #A9291C;
+	position: relative;
+}
+
+#shortcut{
+	height: 30px;
+	background-color: #E3E4E5;
+	border-bottom: 1px solid #DDDDDD;
+	color: #999;
+	position: relative;
+	z-index: 2;
+}
+
+#header{
+	width: 100%;
+	height: 140px;
+	overflow: visible;
+	position: relative;
+	background-color: #F6F6F6;
+	position: relative;
+	z-index: 1;
+}
+
+#cover{
+	height: 480px;
+	background-color: #E3E4E5;
+	position: relative;
+	margin-bottom: 10px;
+}
+.cover_col1,.cover_col2{
+	float: left;
+	height: 100%;
+}
+.cover_col1{
+	width: 190px;
+	margin-right: 10px;
+}
+.cover_col2{
+	width: 790px;
+}
+.cover_col3 {
+    float: right;
+    margin-left: 10px;
+    width: 190px;
+    height: 100%;
+    background-color: #fff;
+}
+#seckill{
+	height: 305px;
+	background-color: #eee;
+}
