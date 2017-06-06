@@ -77,9 +77,7 @@
 	top: 35px;
 	left: -122px;
 }
-#header .dropdown-layer a:hover{
-	color: #C0272C;
-}
+
 /*购物车标签*/
 #header .dd-icon{
 	color: #F10215;
@@ -89,14 +87,9 @@
 #header .dd-icon i{
 	font-size: 18px;
 }
-#header .dd-icon a{
-	color: #F10215;
-}
-#header .dd-icon a:hover{
-	color: #F10215;
-}
+#header .dd-icon a,#header .dd-icon a:hover,
 #header .dd-icon a:visited,#header .dd-icon a:link{
-	color: #F10215;
+	color: #F10215!important;
 }
 #shopping-count{
 	width: 14px;
@@ -209,16 +202,10 @@
 	text-align: center;
 	border-radius: 4px;
 }
-.cart_ft a{
-	color: #FFFFFF;
+.cart_ft a,.cart_ft a:hover,
+.cart_ft a:visited,.cart_ft a:link{
+	color: #FFFFFF!important;
 }
-.cart_ft a:hover{
-	color: #FFFFFF;
-}
-.cart_ft a:visited,.dd-icon a:link{
-	color: #FFFFFF;
-}
-
 /*-------hotwords-----------*/
 #hotwords {
     overflow: hidden;

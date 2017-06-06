@@ -21,3 +21,22 @@
 	display: none;
 }
 
+/*鼠标悬浮时更改样式*/
+.dropdown_hover .dropdown-layer{
+	border: 1px solid #CFCFCF;
+	display: block;
+}
+.dropdown_hover .dd-icon{
+	border: 1px solid #CFCFCF;
+	background-color: #FFFFFF;
+	padding-bottom: 2px;
+	border-bottom: none;
+}
+
+.mobile-jd_hover .mobile_static_qrcode,
+.website-nav_hover~.mobile-jd .mobile_static_qrcode{
+	display: none;
+}
+.mobile-jd_hover .mobile_pop{
+	display: block;
+}

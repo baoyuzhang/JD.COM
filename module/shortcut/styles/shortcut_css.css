@@ -48,6 +48,11 @@
 .li_text{
 	padding: 0 7px;
 }
+.mobile_text{
+	width: 60px;
+	padding: 0 7px;
+	text-align: center;
+}
 #shortcut li i{
 	position: absolute;
 	top:0;
@@ -112,7 +117,7 @@
 .website-nav .dropdown-layer{
 	width: 1190px;
 	top: 30px;
-	right: -75px;
+	right: -87px;
 	z-index: 2;
 }
 .myjdlist{
@@ -154,14 +159,14 @@
 .white-up-arrow{
 	position: absolute;
 	top: 13px!important;
-	right: 24px!important;
+	right: 28px!important;
 	color: #fff;
 	z-index: 1;
 }
 .mobile_static_qrcode{
 	position: absolute;
 	top: 30px;
-	right: -5px;
+	left: 3px;
 	color: #fff;
 	padding: 3px;
 	border: 1px solid #CFCFCF;

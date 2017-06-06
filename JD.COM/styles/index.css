@@ -46,6 +46,11 @@
 .li_text{
 	padding: 0 7px;
 }
+.mobile_text{
+	width: 60px;
+	padding: 0 7px;
+	text-align: center;
+}
 #shortcut li i{
 	position: absolute;
 	top:0;
@@ -71,7 +76,7 @@
 .website-nav .dropdown-layer{
 	width: 1190px;
 	top: 30px;
-	right: -75px;
+	right: -87px;
 	z-index: 2;
 }
 
@@ -158,7 +163,7 @@
 .white-up-arrow{
 	position: absolute;
 	top: 13px!important;
-	right: 24px!important;
+	right: 28px!important;
 	color: #fff;
 	z-index: 1;
 }
@@ -166,7 +171,7 @@
 	/*display: none;*/
 	position: absolute;
 	top: 30px;
-	right: -5px;
+	left: 3px;
 	color: #fff;
 	padding: 3px;
 	border: 1px solid #CFCFCF;
@@ -306,14 +311,9 @@
 #header .dd-icon i{
 	font-size: 18px;
 }
-#header .dd-icon a{
-	color: #F10215;
-}
-#header .dd-icon a:hover{
-	color: #F10215;
-}
+#header .dd-icon a,#header .dd-icon a:hover,
 #header .dd-icon a:visited,#header .dd-icon a:link{
-	color: #F10215;
+	color: #F10215!important;
 }
 #shopping-count{
 	width: 14px;
@@ -426,14 +426,9 @@
 	text-align: center;
 	border-radius: 4px;
 }
-.cart_ft a{
-	color: #FFFFFF;
-}
-.cart_ft a:hover{
-	color: #FFFFFF;
-}
-.cart_ft a:visited,.cart_ft .dd-icon a:link{
-	color: #FFFFFF;
+.cart_ft a,.cart_ft a:hover,
+.cart_ft a:visited,.cart_ft a:link{
+	color: #FFFFFF!important;
 }
 
 /*-------hotwords-----------*/
