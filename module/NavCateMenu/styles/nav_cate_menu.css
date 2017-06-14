@@ -1,0 +1,134 @@
+/*----------------------Nav Cate Menu JS-------------------*/
+
+/*---------a标签效果--------*/
+.nav_cate_menu a:visited,.nav_cate_menu a:link,.cate_channel_lk a:hover{
+	color: #fff;
+}
+.cate_detail a:visited,.cate_detail a:link{
+	color: #666;
+}
+.nav_cate_menu a:hover{
+	color: #c81623;
+}
+/*--------悬浮效果js--------*/
+/*一级菜单li*/
+.cate_menu .li_hover{
+	background-color: #999395;
+}
+/*二级菜单悬浮层*/
+.cate_menu .li_hover .cate_part{
+	display: block;
+}
+/*---------悬浮效果css--------*/
+/*二级菜单channel*/
+.cate_channel_lk:hover{
+	background-color: #5E5558;
+}
+/*-----------一级菜单----------*/
+.fs .inner{
+	height: 480px;
+}
+.nav_cate_menu{
+	width: 190px;
+	height: 480px;
+	color: #fff;
+}
+.cate{
+	width: 100%;
+	height: 100%;
+	background-color: #6E6568;
+	font-size: 14px;
+	line-height: 28px;
+	text-indent: 12px;
+	position: relative;
+}
+.cate_menu{
+	padding: 16px 0;
+}
+
+/*-----------二级菜单------------*/
+.cate_part{
+	display: none;
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 998px;
+    min-height: 478px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+    text-indent: 0;
+    font-size: 12px;
+/*    -webkit-transition: top .25s ease;
+    transition: top .25s ease;*/
+}
+
+.cate_part_col1{
+	width: 778px;
+	float: left;
+	margin: 20px 0 20px 20px;
+}
+.cate_part_col2{
+	width: 168px;
+	float: left;
+	margin: 20px 16px;
+	line-height: 0;
+}
+.cate_brand{
+	width: 168px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.cate_brand_lk{
+	margin: 0 0 1px 1px;
+}
+.cate_promotion{
+	margin-top: 10px;
+}
+.cate_promotion_lk img{
+	margin-bottom: 1px;
+}
+.cate_channel_lk{
+	display: inline-block;
+	background-color: #6E6568;
+	padding: 0 10px;
+	line-height: 24px;
+}
+.cate_detail{
+	height: 16px;
+	line-height: 16px;
+}
+.cate_detail_tit{
+	display: inline-block;
+	width: 65px;
+	float: left;
+	text-align: right;
+	margin: 10px 0;
+	padding: 0 10px;
+	font-weight: bold;
+}
+.cate_detail_con{
+	float: left;
+	width: 690px;
+	padding: 6px 0;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.cate_part .cate_detail_item:last-child .cate_detail_con{
+	border: none;
+}
+.cate_detail_con_lk{
+	display: inline-block;
+	margin: 4px 0;
+	padding: 0 10px;
+	border-left: 1px solid #EBEBEB;
+}

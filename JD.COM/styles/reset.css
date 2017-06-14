@@ -15,7 +15,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, button, textar
 }
 
 /* Class for clearing floats */
-.clear {
+.clearfix {
 	clear: both;
 }
 
@@ -28,12 +28,10 @@ li{
 }
 a{
 	text-decoration: none;
+	color: #666;
 }
 a:hover{
-	color: #C0272C;
-}
-a:visited,a:link{
-	color: #666;
+	color: #c81623;
 }
 button{
 	border: none;

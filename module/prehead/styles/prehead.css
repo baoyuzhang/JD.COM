@@ -1,0 +1,12 @@
+/*--------------------促销活动prehead---------------------*/
+#prehead{
+	transition: opacity 0.6s ease;
+}
+#prehead .inner{
+	background: url(../images/promotion1.jpg) no-repeat 0 0;
+}
+#prehead .iconfont{
+	position: absolute;
+	top: 0;
+	right: 0;
+}

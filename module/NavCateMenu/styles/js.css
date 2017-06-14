@@ -1,0 +1,57 @@
+/*--------悬浮效果css--------*/
+/*一级菜单li*/
+.cate_menu li:hover{
+	background-color: #999395;
+}
+/*二级菜单悬浮层*/
+/*.cate_menu li:nth-of-type(1):hover #cate_item1{
+	display: block;
+}
+.cate_menu li:nth-of-type(2):hover #cate_item2{
+	display: block;
+}
+.cate_menu li:nth-of-type(3):hover #cate_item3{
+	display: block;
+}
+.cate_menu li:nth-of-type(4):hover #cate_item4{
+	display: block;
+}
+.cate_menu li:nth-of-type(5):hover #cate_item5{
+	display: block;
+}
+.cate_menu li:nth-of-type(6):hover #cate_item6{
+	display: block;
+}
+.cate_menu li:nth-of-type(7):hover #cate_item7{
+	display: block;
+}
+.cate_menu li:nth-of-type(8):hover #cate_item8{
+	display: block;
+}
+.cate_menu li:nth-of-type(9):hover #cate_item9{
+	display: block;
+}
+.cate_menu li:nth-of-type(10):hover #cate_item10{
+	display: block;
+}
+.cate_menu li:nth-of-type(11):hover #cate_item11{
+	display: block;
+}
+.cate_menu li:nth-of-type(12):hover #cate_item12{
+	display: block;
+}
+.cate_menu li:nth-of-type(13):hover #cate_item13{
+	display: block;
+}
+.cate_menu li:nth-of-type(14):hover #cate_item14{
+	display: block;
+}
+.cate_menu li:nth-of-type(15):hover #cate_item15{
+	display: block;
+}
+.cate_menu li:nth-of-type(16):hover #cate_item16{
+	display: block;
+}*/
+.cate_menu li:nth-of-type(n):hover .cate_part{
+	display: block;
+}

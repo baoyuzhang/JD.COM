@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Current Date</title>
+	<style type="text/css">
+
+		.cd {
+		    color: #fff;
+		    width: 300px;
+		}
+		.cd_main {
+		    background-color: #440106;
+		    border-radius: 5px;
+		    font-family: Arial;
+		    padding: 20px;
+		}
+		.cd_row{
+			width: 100%;
+			text-align: center;
+			font-size: 20px;
+		    font-weight: 200;
+		}
+		.cd_item {
+		    display: inline-block;
+		    width: 45px;
+		    height: 50px;
+		    font-size: 40px;
+		    font-weight: 500;
+		    text-align: center;
+		    line-height: 37px;
+		}
+		.cd_split {
+		    display: inline-block;
+		    margin: 12px 4px 0;
+		    width: 4px;
+		    height: 12px;
+		    font-size: 0;
+		    line-height: 0;
+		}
+		.cd_split_dot {
+		    display: inline-block;
+		    width: 4px;
+		    height: 4px;
+		    -moz-border-radius: 100%;
+		    border-radius: 100%;
+		    background-color: #fff;
+		}
+		.cd_split_top {
+		    margin-bottom: 4px;
+		}
+		.cd_split_bottom {
+		    top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="cd">
+		<div class="cd_main">
+			<div class="cd_row cd_row1">
+				<div class="cd_item cd_hour">
+					<span class="cd_item_txt"></span>
+				</div>
+				<div class="cd_split">
+					<i class="cd_split_dot cd_split_top"></i>
+					<i class="cd_split_dot cd_split_bottom"></i>
+				</div>
+				<div class="cd_item cd_minute">
+					<span class="cd_item_txt"></span>
+				</div>
+				<div class="cd_split">
+					<i class="cd_split_dot cd_split_top"></i>
+					<i class="cd_split_dot cd_split_bottom"></i>
+				</div>
+				<div class="cd_item cd_second">
+					<span class="cd_item_txt"></span>
+				</div>
+			</div>
+			<div class="cd_row cd_row2">
+				<span class="cd_year"></span>
+				<span class="cd_month"></span>
+				<span class="cd_day"></span>
+				<span class="cd_weekday"></span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		currentDate();
+		setInterval('currentDate()',1000);
+		function currentDate(){
+			var now = new Date();
+			var year = now.getFullYear();
+			var month = now.getMonth();
+			var day = now.getDate();
+			var weekday = new Array();
+			weekday[0] = "日";
+			weekday[1] = "一";
+			weekday[2] = "二";
+			weekday[3] = "三";
+			weekday[4] = "四";
+			weekday[5] = "五";
+			weekday[6] = "六";
+			var hour = now.getHours();
+			var minute = now.getMinutes();
+			var second = now.getSeconds();
+			minute = checkTime(minute);
+			second = checkTime(second);
+
+			document.getElementsByClassName('cd_year')[0].innerHTML =  year + "年";
+			document.getElementsByClassName('cd_month')[0].innerHTML =  month + "月";
+			document.getElementsByClassName('cd_day')[0].innerHTML =  day + "日";
+			document.getElementsByClassName('cd_weekday')[0].innerHTML =  "星期" + weekday[now.getDay()];
+			document.getElementsByClassName('cd_hour')[0].getElementsByClassName('cd_item_txt')[0].innerHTML =  hour;
+			document.getElementsByClassName('cd_minute')[0].getElementsByClassName('cd_item_txt')[0].innerHTML =  minute;
+			document.getElementsByClassName('cd_second')[0].getElementsByClassName('cd_item_txt')[0].innerHTML =  second;
+		}
+		function checkTime(arg){
+			if (arg < 10) {
+				arg = "0" + arg;
+			}
+			return arg;
+		}
+	</script>
+</body>
+</html>

@@ -6,14 +6,94 @@ body {
 	font: 12px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
 	color: #666;
 }
-
+.index {
+    background-color: #f6f6f6;
+}
 .inner{
 	width: 1190px;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+	/*overflow: hidden;*/
 }
-
+/*--------mod------------*/
+.mod_ver {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 0;
+}
+.mod_price {
+    font-size: 14px;
+    color: #f10214;
+}
+.mod_price i {
+    margin-right: 3px;
+    font-family: arial;
+    font-weight: 400;
+    font-size: 12px;
+}
+/*--------box---------*/
+.box_hd {
+    position: relative;
+    padding: 0 20px 0 30px;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    overflow: hidden;
+}
+.box_hd_col1 {
+    float: left;
+}
+.box_hd_dec {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 28px;
+    height: 28px;
+}
+.box_hd_icon, .box_promo, .box_tit {
+    float: left;
+}
+.box_tit {
+    /*font-family: fzzhengheis-el-gbregular;*/
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+    height: 40px;
+    padding-top: 9px;
+}
+.box_subtit {
+    position: relative;
+    float: right;
+    margin-top: 19px;
+    padding-right: 20px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+}
+.box_subtit:hover {
+    color: #fff;
+}
+.box_subtit_arrow, .coupon_entry_btn_ico {
+    background: url(../images/sprite_index@1x.png) no-repeat -154px -40px;
+    background-size: 218px 188px;
+    width: 15px;
+    height: 16px;
+}
+.box_subtit_arrow {
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+.box_hd_col2 {
+    float: right;
+}
+.box_bd {
+    background-color: #fff;
+}
 @font-face {
   font-family: 'iconfont';
   src: url('iconfont.eot');
@@ -37,11 +117,6 @@ body {
 	float: right;
 }
 
-
-a:hover{
-	color: #c81623!important;
-}
-
 #prehead{
 	height: 80px;
 	background-color: #A9291C;
@@ -62,14 +137,12 @@ a:hover{
 	height: 140px;
 	overflow: visible;
 	position: relative;
-	background-color: #F6F6F6;
 	position: relative;
 	z-index: 1;
 }
 
 #cover{
 	height: 480px;
-	background-color: #E3E4E5;
 	position: relative;
 	margin-bottom: 10px;
 }
@@ -80,9 +153,13 @@ a:hover{
 .cover_col1{
 	width: 190px;
 	margin-right: 10px;
+	position: relative;
+	z-index: 2;
 }
 .cover_col2{
 	width: 790px;
+	position: relative;
+	z-index: 1;
 }
 .cover_col3 {
     float: right;
@@ -90,8 +167,12 @@ a:hover{
     width: 190px;
     height: 100%;
     background-color: #fff;
+   	position: relative;
+	z-index: 1;
 }
 #seckill{
 	height: 305px;
-	background-color: #eee;
+}
+#enjoy {
+    height: 598px;
 }

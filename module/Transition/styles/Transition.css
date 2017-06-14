@@ -1,0 +1,258 @@
+/*----------------------cover_col3-------------------*/
+
+/*---------user--------*/
+.user {
+    padding: 0 15px;
+    height: 115px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.user_info {
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0 15px 58px;
+    height: 45px;
+}
+.user_info_avatar {
+    overflow: hidden;
+    position: absolute;
+    margin-left: -58px;
+    width: 50px;
+    height: 50px;
+}
+.user_info_avatar img {
+    display: block;
+    height: 40px;
+    margin: 5px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+}
+.user_info_avatar_lk {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: url(../images/sprite_userinfo@1x.png) no-repeat -70px 0;
+    -moz-background-size: 156px 123px;
+    background-size: 156px 123px;
+}
+.user_info_show p {
+    overflow: hidden;
+    margin-top: 2px;
+    width: 100%;
+    white-space: nowrap;/*文本不换行，在同一行上继续，直到遇到<br>标签为止*/
+    text-overflow: ellipsis;/*显示省略符号来代表被修剪的文本*/
+}
+.user_profit {
+    overflow: hidden;
+    height: 24px;
+    font-size: 0;/*清除display:inline-block元素换行符间隙实例页面*/
+    margin-right: -10px;
+}
+.user_profit_lk {
+    display: inline-block;
+    margin-right: 10px;
+    width: 70px;
+    height: 20px;
+    border: 2px solid #e01222;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #e01222;
+}
+.user_profit a:hover {
+    background-color: #e01222;
+    color: #fff;
+}
+/*---------news--------*/
+.news {
+    overflow: hidden;
+    padding: 0 15px;
+    height: 154px;
+}
+.news .mod_tab_head {
+    padding: 8px 0 4px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    line-height: 14px;
+}
+.news .mod_tab_head_item {
+    color: #333;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right: 1px solid #dfe0e1;
+}
+.news .news_first {
+    padding-left: 0;
+}
+.news .news_last {
+    padding-right: 0;
+    border-right: 0;
+}
+.news_tab_active {
+    position: absolute;
+    bottom: -1px;
+    left: -2px;
+    width: 28px;
+    height: 2px;
+    background: #db192b;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease,-webkit-transform 0.3s ease;
+}
+.news_more {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.news .mod_tab_content {
+    padding: 12px 0;
+}
+.news .mod_tab_content_item {
+    display: none;
+}
+.news .mod_tab_content_item_on {
+    display: block;
+}
+.news_item {
+    line-height: 24px;
+    max-width: 160px;
+    width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*---------service--------*/
+.service {
+    overflow: hidden;
+    position: relative;
+    height: 210px;
+
+}
+.service_entry {
+    overflow: hidden;
+    width: 190px;
+}
+.service_list {
+    margin-left: -1px;
+    width: 192px;
+    height: 210px;
+    overflow: hidden;
+}
+.service_item {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 47px;
+    height: 69px;
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    text-align: center;
+}
+.service_ico, .service_lk, .service_txt {
+    display: block;
+}
+.service_lk {
+    padding-top: 14px;
+    height: 55px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.service_txt {
+    height: 22px;
+    line-height: 22px;
+    border-top: 2px solid #fff;
+}
+.service_ico{
+	width:24px;
+	height:24px;
+	margin: 0 auto;
+	background:url(../images/sprite_fs@1x.png) no-repeat;
+}
+.service_ico_huafei{
+	background-position:0 -88px;
+}
+.service_ico_jipiao{
+	background-position:0 -44px;
+}
+.service_ico_dianying{
+	background-position:-44px -44px;
+}
+.service_ico_youxi{
+	background-position:-88px 0;
+}
+.service_ico_qyg{
+	background-position:-88px -44px;
+}
+.service_ico_jiayou{
+	background-position:0 0;
+}
+.service_ico_jiudian{
+	background-position:-44px -88px;
+}
+.service_ico_huoche{
+	background-position:-88px -88px;
+}
+.service_ico_zhongchou{
+	background-position:-132px 0;
+}
+.service_ico_licai{
+	background-position:-132px -44px;
+}
+.service_ico_lipin{
+	background-position:-132px -88px;
+}
+.service_ico_baitiao{
+	background-position:-44px 0;
+}
+.service_pop {
+    position: absolute;
+    left: 0;
+    top: 210px;
+    width: 190px;
+    height: 185px;
+    background-color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.service_pop_item {
+    height: 185px;
+    display: none;
+}
+.service_pop_close {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+.service .mod_tab_content_item{
+    display: none;
+}
+
+.service_expand .service_frame .service_lk {
+    /*margin-top: -38px;*/
+}
+.service_expand .service_frame_on .service_txt {
+    color: #e01121;
+    border-top-color: #e01121;
+}
+.service_expand .service_pop {
+    /*top: 24px;*/
+}
+
+
+.csstransitions .service_expand .service_frame .service_lk {
+    margin-top: 0;
+    -webkit-transform: translate3d(0,-38px,0);
+    transform: translate3d(0,-38px,0);
+}
+.csstransitions .service_expand .service_pop {
+    /*top: 210px;*/
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+}

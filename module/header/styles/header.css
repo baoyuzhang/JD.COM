@@ -6,7 +6,7 @@
 	position: relative;
 	background-color: #F6F6F6;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 /*促销活动图promotion2*/
@@ -257,4 +257,9 @@
     font-size: 16px;
     font-weight: 700;
     color: #555;
+}
+.cart_item a:hover,
+#hotwords a:hover,
+#navitems a:hover{
+	color: #c81623;
 }

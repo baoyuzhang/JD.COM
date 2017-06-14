@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Count Down</title>
+	<style type="text/css">
+		.sk_cd {
+		    float: left;
+		}
+		.sk_cd_tip {
+		    float: left;
+		    line-height: 45px;
+		    padding-top: 10px;
+		    font-size: 14px;
+		}
+		.sk_cd_main {
+		    float: left;
+		    margin-left: 6px;
+		    margin-right: 8px;
+		}
+		.sk_cd_tip {
+		    float: left;
+		    line-height: 45px;
+		    padding-top: 10px;
+		    font-size: 14px;
+		}
+		.cd_item {
+		    float: left;
+		    width: 35px;
+		    height: 37px;
+		    background-color: #440106;
+		    color: #fff;
+		    font-size: 24px;
+		    font-family: Arial;
+		    font-weight: 700;
+		    -moz-border-radius: 3px;
+		    border-radius: 3px;
+		    text-align: center;
+		    line-height: 37px;
+		    margin-top: 10px;
+		}
+		.cd_split {
+		    float: left;
+		    margin: 22px 4px 0;
+		    width: 4px;
+		    height: 12px;
+		    font-size: 0;
+		    line-height: 0;
+		}
+
+		.cd_split_dot {
+		    display: block;
+		    width: 4px;
+		    height: 4px;
+		    -moz-border-radius: 100%;
+		    border-radius: 100%;
+		    background-color: #440106;
+		}
+		.cd_split_top {
+		    margin-bottom: 4px;
+		}
+		.cd_split_bottom {
+		    top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="sk_cd">
+	<span class="sk_cd_tip">当前场次</span>
+	<div class="sk_cd_main">
+		<div class="cd clearfix">
+			<div class="cd_item cd_hour">
+				<span class="cd_item_txt"></span>
+			</div>
+			<div class="cd_split">
+				<i class="cd_split_dot cd_split_top"></i>
+				<i class="cd_split_dot cd_split_bottom"></i>
+			</div>
+			<div class="cd_item cd_minute">
+				<span class="cd_item_txt"></span>
+			</div>
+			<div class="cd_split">
+				<i class="cd_split_dot cd_split_top"></i>
+				<i class="cd_split_dot cd_split_bottom"></i>
+			</div>
+			<div class="cd_item cd_second">
+				<span class="cd_item_txt"></span>
+			</div>
+		</div>
+	</div>
+	<span class="sk_cd_tip">后结束抢购</span>
+	<script type="text/javascript">
+		countDown();
+		setInterval('countDown()',1000);
+		function countDown(){
+			var now = new Date();
+			var endTime = new Date("2200/6/14,23:59:00");
+			var leftTime = parseInt((endTime.getTime() - now.getTime())/1000);
+
+			var h = parseInt((leftTime/3600)%24);  // 先转换为时再取余
+			var m = parseInt((leftTime/60)%60);  // 先转换为分再取余
+			var s = parseInt(leftTime%60);  // 先转换为秒再取余
+			h = checkTime(h);
+			m = checkTime(m);
+			s = checkTime(s);
+
+			document.getElementsByClassName('cd_hour')[0].getElementsByClassName('cd_item_txt')[0].innerHTML = h;
+			document.getElementsByClassName('cd_minute')[0].getElementsByClassName('cd_item_txt')[0].innerHTML = m;
+			document.getElementsByClassName('cd_second')[0].getElementsByClassName('cd_item_txt')[0].innerHTML = s;
+		}
+		
+		function checkTime(arg){
+			if (arg < 10) {
+				arg = "0" + arg;
+			}
+			return arg;
+		}
+	</script>
+</div>
+</body>
+</html>
