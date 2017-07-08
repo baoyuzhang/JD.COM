@@ -17,7 +17,7 @@
 
 - 焦点轮播图Slider[【JS实现效果预览】](https://baoyuzhang.github.io/JD.COM/module/Slider/slider.html)
 
-- 服务窗动画Transition[【JS实现效果预览】](https://baoyuzhang.github.io/JD.COM/module/Transition/transition.html)[【Notes】](https://github.com/baoyuzhang/JD.COM/tree/master/module/Slider)
+- 服务窗动画Transition[【JS实现效果预览】](https://baoyuzhang.github.io/JD.COM/module/Transition/Transition.html)[【Notes】](https://github.com/baoyuzhang/JD.COM/tree/master/module/Transition)
 
 ### 5. seckill
 [【JS实现效果预览】](https://baoyuzhang.github.io/JD.COM/module/seckill/seckill.html)
