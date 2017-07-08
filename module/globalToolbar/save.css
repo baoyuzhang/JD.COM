@@ -1,0 +1,180 @@
+/*----------------------panels-------------------*/
+.jdm-toolbar-panels {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    z-index: 2;
+    background: #eceaea;
+}
+.jdm-toolbar-panel {
+    width: 270px;
+    height: 100%;
+    position: absolute;
+    background: #eceaea;
+    visibility: hidden;
+}
+.jdm-tbar-panel-header {
+    position: relative;
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    background: #eceaea;
+}
+.jdm-tbar-panel-header i {
+    margin-right: 4px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+.jdm-tbar-panel-header .title {
+    display: inline-block;
+    height: 40px;
+    color: #5e5050;
+    font: 16px/40px "微软雅黑";
+}
+.jdm-tbar-panel-header .close-panel {
+    width: 12px;
+    height: 12px;
+    background-position: 0 -250px;
+    position: absolute;
+    right: 8px;
+    top: 16px;
+    cursor: pointer;
+    -webkit-transition: transform .2s ease-out 0s;
+    -moz-transition: transform .2s ease-out 0s;
+    transition: transform .2s ease-out 0s;
+}
+.jdm-tbar-panel-main {
+    position: relative;
+}
+.jdm-tbar-panel-content {
+    width: 270px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+iframe[Attributes Style] {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    width: 100%;
+    height: 100%;
+}
+iframe {
+    border-width: 0px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+/*---------ad--------*/
+.jdm-tbar-panel-ad .jdm-tbar-panel-content {
+    overflow: hidden;
+}
+/*---------cart--------*/
+.jdm-tbar-cart-list {
+    width: 100%;
+}
+.jdm-tbar-cart-item {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.jtc-item-goods {
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+.jtc-item-goods .p-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin-right: 5px;
+}
+.jtc-item-goods .p-name {
+    height: 32px;
+    line-height: 16px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+.jtc-item-goods .p-price {
+    height: 16px;
+    padding-right: 65px;
+    overflow: hidden;
+    font: 12px/16px verdana;
+    color: #666;
+}
+.jtc-item-goods .p-del {
+    position: absolute;
+    right: 10px;
+    top: 52px;
+    width: 35px;
+    height: 16px;
+    line-height: 16px;
+    color: #005aa0;
+    text-align: right;
+    display: none;
+}
+.jtc-item-promo {
+    padding: 12px 0 12px 57px;
+    border-bottom: 1px dashed #e1e1e1;
+    position: relative;
+}
+.jtc-item-promo .promo-tag {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 20px;
+    margin-top: -1px;
+    margin-left: -57px;
+    margin-right: 17px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(245, 136, 19);
+    font: 12px/20px 宋体;
+}
+.jtc-item-promo .promo-text {
+    height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font: 12px/18px verdana;
+}
+/*footer*/
+.jdm-tbar-panel-cart .jdm-tbar-panel-footer {
+    height: 50px;
+    background-color: #eceaea;
+}
+.jdm-tbar-checkout {
+    height: 40px;
+    padding: 5px 110px 5px 5px;
+    position: relative;
+}
+.jdm-tbar-checkout .jtc-number {
+    line-height: 20px;
+}
+.jdm-tbar-checkout .jtc-number strong {
+    font-family: verdana;
+    color: #c81623;
+}
+.jdm-tbar-checkout .jtc-sum {
+    line-height: 20px;
+}
+.jdm-tbar-checkout .jtc-btn {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font: 16px/35px 微软雅黑;
+    background: rgb(200, 22, 35);
+}
+.jdm-toolbar-wrap a {
+    text-decoration: none;
+}

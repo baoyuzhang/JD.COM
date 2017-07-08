@@ -127,20 +127,6 @@ function iChange(index){
 /*---------cover_col3---------*/
 var cover_col3 = cover.getElementsByClassName('cover_col3')[0];
 
-function hasClass( elements,cName ){ 
-    return !!elements.className.match( new RegExp( "(\\s|^)" + cName + "(\\s|$)") ); // ( \\s|^ ) ÅÐ¶ÏÇ°ÃæÊÇ·ñÓÐ¿Õ¸ñ £¨\\s | $ £©ÅÐ¶ÏºóÃæÊÇ·ñÓÐ¿Õ¸ñ Á½¸ö¸ÐÌ¾ºÅÎª×ª»»Îª²¼¶ûÖµ ÒÔ·½±ã×öÅÐ¶Ï 
-}
-function addClass( elements,cName ){ 
-    if( !hasClass( elements,cName ) ){ 
-        elements.className += " " + cName; 
-    }
-}
-function removeClass( elements,cName ){ 
-    if( hasClass( elements,cName ) ){ 
-        elements.className = elements.className.replace( new RegExp( "(\\s|^)" + cName + "(\\s|$)" )," " ); // replace·½·¨ÊÇÌæ»» 
-    }
-}
-
 // news
 var cover_col3_news = cover_col3.getElementsByClassName('news')[0];
 var news_first = cover_col3_news.getElementsByClassName('news_first')[0];
