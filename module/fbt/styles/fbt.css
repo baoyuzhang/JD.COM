@@ -79,6 +79,24 @@
     -o-transition: transform .4s ease-out;
     transition: transform .4s ease-out;
 }
+
+.csstransitions .find_item_img {
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    -moz-transition: transform .4s ease,-moz-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+.csstransitions .find_item_lk:hover .find_item_img {
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+}
 /*----------------------fbt_col2-------------------*/
 
 /*---------head--------*/
