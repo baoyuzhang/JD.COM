@@ -19,6 +19,13 @@ em {
 	position: relative;
 	/*overflow: hidden;*/
 }
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
 /*--------mod------------*/
 .mod_ver {
     display: inline-block;
@@ -175,6 +182,12 @@ em {
 }
 #seckill{
 	height: 305px;
+}
+#fbt {
+    height: 444px;
+}
+#fbt, #seckill {
+    margin-bottom: 30px;
 }
 #enjoy {
     height: 598px;

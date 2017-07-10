@@ -23,6 +23,10 @@
 - 倒计时[【JS实现效果预览】](https://baoyuzhang.github.io/JD.COM/module/DateAndTime/CountDown.html)
 - 当前时间挂件[【JS实现效果预览】](https://baoyuzhang.github.io/JD.COM/module/DateAndTime/CurDate.html)
 
+## 6. fbt
+[【JS实现效果预览】](https://baoyuzhang.github.io/JD.COM/module/fbt/fbt.html)
+- JS改变opacity实现轮播图[【JS实现效果预览】](https://baoyuzhang.github.io/JD.COM/module/fbt/fbt.html)[【Notes】](https://github.com/baoyuzhang/JD.COM/tree/master/module/fbt)
+
 ## 6. footer
 [【效果预览】](https://baoyuzhang.github.io/JD.COM/module/footer/footer.html)
 

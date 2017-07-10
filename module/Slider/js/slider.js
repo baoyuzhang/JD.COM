@@ -29,6 +29,7 @@ slider_control_prev.onclick = function(){
     imgAnimate(imgwidth);
     iAnimate("slider_control_prev");
 };
+
 for (var i = 0; i < slider_indicator_btns.length; i++) {
     slider_indicator_btns[i].i = i;
     slider_indicator_btns[i].onclick = function(){
@@ -49,7 +50,7 @@ function play(){
     },interval);
 }
 function stop(){
-    clearTimeout(timer);
+    clearInterval(timer);
 }
 
 // 图片切换 + 动画
@@ -102,20 +103,5 @@ function iChange(index){
     }
     
     addClass(slider_indicator_btns[index],'slider_indicator_btn_active');
-}
-
-
-function hasClass( elements,cName ){ 
-    return !!elements.className.match( new RegExp( "(\\s|^)" + cName + "(\\s|$)") );
-}
-function addClass( elements,cName ){ 
-    if( !hasClass( elements,cName ) ){ 
-        elements.className += " " + cName; 
-    }
-}
-function removeClass( elements,cName ){ 
-    if( hasClass( elements,cName ) ){ 
-        elements.className = elements.className.replace( new RegExp( "(\\s|^)" + cName + "(\\s|$)" )," " );
-    }
 }
 
