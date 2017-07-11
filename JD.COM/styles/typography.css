@@ -198,10 +198,36 @@ em {
 .coupon, .entry_c3 {
     margin-bottom: 30px;
 }
+/*rec*/
 .chn, .rec {
     margin-bottom: 30px;
 }
 .rec {
     height: 100px;
     background-color: #e0e0e0;
+}
+.rec_list {
+    overflow: hidden;
+    height: 100px;
+}
+.rec_item {
+    overflow: hidden;
+    float: left;
+    width: 396px;
+    height: 100%;
+}
+.o2_mini .rec_item {
+    width: 330px;
+}
+.rec_img {
+    display: block;
+    margin: auto;
+}
+.csstransitions .rec_img {
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    transition: opacity .2s;
+}
+.csstransitions .rec_lk:hover .rec_img {
+    opacity: .8;
 }
