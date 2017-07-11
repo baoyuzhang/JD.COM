@@ -183,12 +183,25 @@ em {
 #seckill{
 	height: 305px;
 }
+#enjoy {
+    height: 598px;
+}
 #fbt {
     height: 444px;
 }
 #fbt, #seckill {
     margin-bottom: 30px;
 }
-#enjoy {
-    height: 598px;
+.coupon {
+    height: 215px;
+}
+.coupon, .entry_c3 {
+    margin-bottom: 30px;
+}
+.chn, .rec {
+    margin-bottom: 30px;
+}
+.rec {
+    height: 100px;
+    background-color: #e0e0e0;
 }
