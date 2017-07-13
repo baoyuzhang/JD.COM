@@ -6,3 +6,8 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+word-wrap: break-word;
+word-break: break-all;
+white-space: nowrap;
+text-overflow: ellipsis;

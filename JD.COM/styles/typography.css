@@ -198,6 +198,14 @@ em {
 .coupon, .entry_c3 {
     margin-bottom: 30px;
 }
+.entry_c5, .entry_c6, .entry_c7 {
+    margin-bottom: 30px;
+    height: 195px;
+}
+#more {
+    margin-bottom: 30px;
+    min-height: 300px;
+}
 /*rec*/
 .chn, .rec {
     margin-bottom: 30px;

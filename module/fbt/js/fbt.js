@@ -1,4 +1,5 @@
-window.onload = function(){
+addLoadEvent(fbt);
+function fbt(){
     var fbt = document.getElementById('fbt');
 
     /*----------------------fbt_col2-------------------*/
@@ -11,68 +12,68 @@ window.onload = function(){
     var sup_inds = fbt.getElementsByClassName('sup_ind_item');
     var sup_btn_pre = fbt.getElementsByClassName('sup_btn_pre')[0];
     var sup_btn_next = fbt.getElementsByClassName('sup_btn_next')[0];
-    var animated = false;
-    var len = sup_inds.length;
-    var index = 0;
-    var interval = 3000;
-    var timer;
-    play(); // 默认自动播放
+    var sup_animated = false;
+    var sup_len = sup_inds.length;
+    var sup_index = 0;
+    var sup_interval = 3000;
+    var sup_timer;
+    playFbt(); // 默认自动播放
 
     // 为按钮绑定事件
-    sup_tab.onmouseover = stop;
-    sup_tab.onmouseout = play;
+    sup_tab.onmouseover = stopFbt;
+    sup_tab.onmouseout = playFbt;
 
     sup_btn_next.onclick = function(){
-        if (animated) {
+        if (sup_animated) {
             return;
         }
-        animate("sup_btn_next");
+        animateSup("sup_btn_next");
     };
     sup_btn_pre.onclick = function(){
-        if (animated) {
+        if (sup_animated) {
             return;
         }
-        animate("sup_btn_pre");
+        animateSup("sup_btn_pre");
     };
     for (var i = 0; i < sup_inds.length; i++) {
         sup_inds[i].i = i;
         sup_inds[i].onmouseenter = function(){
-            if (animated) {
+            if (sup_animated) {
                 return;
             }
-            pageChange(this.i,1);
-            iChange(this.i);
+            pageChangeSup(this.i,1);
+            iChangeSup(this.i);
         }
     }
 
 
 
     // 自动播放
-    function play(){
-        timer = setInterval(function(){
+    function playFbt(){
+        sup_timer = setInterval(function(){
             sup_btn_next.onclick();
-        },interval);
+        },sup_interval);
     }
-    function stop(){
-        clearInterval(timer);
+    function stopFbt(){
+        clearInterval(sup_timer);
     }
 
     // page、小圆点切换
-    function animate(direction){
+    function animateSup(direction){
         if (direction==="sup_btn_next") {
-            index = Math.abs((index + 1) % len);
+            sup_index = Math.abs((sup_index + 1) % sup_len);
         }else if (direction==="sup_btn_pre") {
-            index = index - 1;
-            if (index < 0) index = len-1;
+            sup_index = sup_index - 1;
+            if (sup_index < 0) sup_index = sup_len-1;
         }
-        pageChange(index,1);
+        pageChangeSup(sup_index,1);
         // 使用CSS3实现pageChange动画效果
-        // sup_pages[index].style.opacity = 1;
-        // sup_pages[index].style.zIndex = 1;
-        iChange(index);
+        // sup_pages[sup_index].style.opacity = 1;
+        // sup_pages[sup_index].style.zsup_Index = 1;
+        iChangeSup(sup_index);
     }
     // 更换page、小圆点状态
-    function iChange(index){
+    function iChangeSup(index){
         // 清除上一次
         for (var i = 0; i < sup_inds.length; i++) {
             if (hasClass(sup_inds[i],'active')) {
@@ -85,8 +86,8 @@ window.onload = function(){
     }
 
     // page切换 + 动画【重点】
-    function pageChange(page,alpha_last){
-        animated = true;
+    function pageChangeSup(page,alpha_last){
+        sup_animated = true;
 
         // 清除上一次
         for (var j = 0; j < sup_pages.length; j++) {
@@ -106,18 +107,18 @@ window.onload = function(){
         var alpha_last = alpha_last*100;
         var offset = alpha_last - alpha;
         var time = 300;
-        var changeInterval = 10;
-        var speed = offset/(time/changeInterval);
+        var changesup_Interval = 10;
+        var speed = offset/(time/changesup_Interval);
 
         var go = function(){
             if ((offset > 0 && alpha < alpha_last) || (offset < 0 && alpha > alpha_last)){
                 alpha = Math.floor(alpha + speed); // *100 再用Math.floor：解决计算精度问题
                 sup_pages[page].style.opacity = alpha/100;
-                setTimeout(go,changeInterval);
+                setTimeout(go,changesup_Interval);
             }else{
                 sup_pages[page].style.opacity = alpha_last/100;
                 sup_pages[page].style.zIndex = alpha_last/100;
-                animated = false;
+                sup_animated = false;
             }
         };
         go();
@@ -151,6 +152,6 @@ window.onload = function(){
             var absOffset = 78*this.i;
             top_tab_active.style.transform = "translateX(" + absOffset + "px)";
 
-        }
+        };
     }
 };
